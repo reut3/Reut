@@ -3,7 +3,9 @@
 
 static void Tests();
 
-
+/*
+    Calculate Max Profit - Buy and Sell Stocks Multiple Times
+*/
 size_t FindMaxProfit(const int *arr, size_t size)
 {
     size_t profit = 0;
