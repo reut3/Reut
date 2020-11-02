@@ -10,7 +10,12 @@ sort_arr_012.o: sort_arr_012.c test_module.h
 	$(gd) -c $<
 
 
+#max_profit
+max_profit.out: max_profit.o test_module.o 
+	$(gd) $^ -o $@
 
+max_profit.o: max_profit.c test_module.h
+	$(gd) -c $<
 
 
 test_module.o: test_module.c test_module.h

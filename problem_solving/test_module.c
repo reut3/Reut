@@ -84,6 +84,29 @@ void CheckIntEquality(int ans, int expected_ans, print_mode_t print_mode)
     }
 }
 
+void CheckSizeTEquality(size_t ans, size_t expected_ans, print_mode_t print_mode)
+{
+    tests++;
+    if (ans != expected_ans)
+    {
+        PrintInRed();
+		printf("Failed\n");
+		ResetColor();
+		failures++;
+
+        if (print_mode == PRINT)
+        {
+            printf("ans= %ld, expected= %ld\n", ans, expected_ans);
+        }
+    }
+    else
+    {
+        PrintInGreen();
+		printf("Pass\n");
+		ResetColor();
+    }
+}
+
 static void PrintAnsAndExpectedArr(int arr_ans[], int expected_arr[], size_t size)
 {
     size_t i = 0;
