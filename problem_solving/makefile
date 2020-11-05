@@ -18,6 +18,14 @@ max_profit.o: max_profit.c test_module.h
 	$(gd) -c $<
 
 
+#max_sub_arr
+max_sub_arr.out: max_sub_arr.o test_module.o 
+	$(gd) $^ -o $@
+
+max_sub_arr.o: max_sub_arr.c test_module.h
+	$(gd) -c $<
+
+
 test_module.o: test_module.c test_module.h
 	$(gd) -c $<
 

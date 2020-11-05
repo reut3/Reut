@@ -12,6 +12,8 @@ void CheckArrEquality(int arr_ans[], int expected_arr[], size_t size, print_mode
 
 void CheckIntEquality(int ans, int expected_ans, print_mode_t print_mode);
 
+void CheckLongEquality(long ans, long expected_ans, print_mode_t print_mode);
+
 void CheckStrEquality(char *str_ans, char *str_expected, print_mode_t print_mode);
 
 void CheckSizeTEquality(size_t ans, size_t expected_ans, print_mode_t print_mode);
